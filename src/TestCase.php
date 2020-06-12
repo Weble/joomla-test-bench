@@ -4,7 +4,6 @@ namespace Weble\JoomlaTestBench;
 
 use Weble\JoomlaTestBench\Concerns\CreatesApplication;
 use Weble\JoomlaTestBench\Concerns\DatabaseTransactions;
-use Weble\JoomlaTestBench\Concerns\DbTestTrait;
 use Weble\JoomlaTestBench\Concerns\InteractsWithAuthentication;
 use Weble\JoomlaTestBench\Concerns\MakesHttpRequests;
 
