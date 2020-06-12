@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+>
+    <testsuites>
+        <testsuite name="Joomla TestBench Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="JTEST_DB_ENGINE" value="mysqli" />
+        <const name="JTEST_DB_HOST" value="localhost" />
+        <const name="JTEST_DB_NAME" value="joomla" />
+        <const name="JTEST_DB_USER" value="root" />
+        <const name="JTEST_DB_PASSWORD" value="" />
+        <const name="JTEST_DB_PREFIX" value="jos_" />
+    </php>
+</phpunit>

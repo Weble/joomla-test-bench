@@ -1,0 +1,49 @@
+{
+  "name": "weble/joomla-test-bench",
+  "description": "Orchestral Test Bench for Joomla",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniele Rosario",
+      "email": "daniele@weble.it"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Weble\\JoomlaTestBench\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Weble\\JoomlaTestBench\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.2.5",
+    "fzaninotto/faker": "^1.9.1"
+  },
+  "require-dev": {
+    "joomla/joomla-cms": "^3.9",
+    "larapack/dd": "dev-master",
+    "mockery/mockery": "^1.3.1",
+    "phpunit/phpunit": "^8.4 || ^9.0",
+    "psr/http-message": "^1.0",
+    "friendsofphp/php-cs-fixer": "^2.16"
+  },
+  "suggest": {
+    "joomla/joomla-cms": "Required for testing (^3.9).",
+    "mockery/mockery": "Allow using Mockery for testing (^1.3.1).",
+    "phpunit/phpunit": "Allow using PHPUnit for testing (^8.4 || ^9.0)."
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/joomla/joomla-cms"
+    }
+  ]
+}
