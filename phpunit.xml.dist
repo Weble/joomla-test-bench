@@ -14,7 +14,7 @@
         <const name="JTEST_DB_HOST" value="localhost" />
         <const name="JTEST_DB_NAME" value="joomla" />
         <const name="JTEST_DB_USER" value="root" />
-        <const name="JTEST_DB_PASSWORD" value="" />
+        <const name="JTEST_DB_PASSWORD" value="joomla" />
         <const name="JTEST_DB_PREFIX" value="jos_" />
     </php>
 </phpunit>
