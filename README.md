@@ -4,11 +4,11 @@ Joomla Test Bench is a package that makes it easy to test a Joomla Extension or 
 
 Clearly inspired by Laravel's [Orchestral Testbench Package](https://github.com/orchestral/testbench), its goal is to give the site / extension developer a set of tools to develop meaning tests, without having to rely on super complex setups.
 
-### Installation
+## Installation
 
 ```composer require --dev weble/joomla-test-bench```
 
-### Site Testing Examples
+## Site Testing Examples
 
 Install this package with composer in your site's root.
 
@@ -70,7 +70,7 @@ The package will automatically detect that it's in a local joomla install, and u
 Then it will "fake" the request going through the application, and let you test the response by accessing the status code, the body, and the headers.
 
 
-### Extension Testing (TODO)
+## Extension Testing (WIP)
 
 To test a joomla extension, install this package in the extension repository through composer
 
@@ -103,7 +103,7 @@ Then proceed to creating a dedicated ```phpunit.xml``` file
 Setup a local db to use as a testing ground.
 The package will detect that there is no local installation of joomla avaiable, and use the latest joomla version included with this package (3.9.x for now) and the db you provided, installing the testing data that comes with joomla.
 
-### TODO
+## TODO
 
 - [] Provide a way to let an extension developer "install" a set of required extensions (like "i need akeeba backup for my extension to work") by using ```registerExtension($pathToZip)``` or something similar in the basic test case.
 - [] Provide a quick way to register the extension and install it in the provided application
