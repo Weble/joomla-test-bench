@@ -23,7 +23,9 @@ Usually, it's a good idea to clone the site's db and use it for testing,
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<phpunit
+        printerClass="NunoMaduro\Collision\Adapters\Phpunit\Printer"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
         bootstrap="vendor/autoload.php"
         colors="true"
@@ -101,11 +103,11 @@ Then proceed to creating a dedicated ```phpunit.xml``` file
 ```
 
 Setup a local db to use as a testing ground.
-The package will detect that there is no local installation of joomla avaiable, and use the latest joomla version included with this package (3.9.x for now) and the db you provided, installing the testing data that comes with joomla.
+The package will detect that there is no local installation of joomla available, and use the latest joomla version included with this package (3.10.x for now) and the db you provided, installing the testing data that comes with joomla.
 
 ## TODO
 
-- [] Provide a way to let an extension developer "install" a set of required extensions (like "i need akeeba backup for my extension to work") by using ```registerExtension($pathToZip)``` or something similar in the basic test case.
-- [] Provide a quick way to register the extension and install it in the provided application
-- [] Integrate Dusk (or similar browser testing tool)
-- [] Provide more test helpers (->assertDatabaseHas, etc) 
+- [ ] Provide a way to let an extension developer "install" a set of required extensions (like "i need akeeba backup for my extension to work") by using ```registerExtension($pathToZip)``` or something similar in the basic test case.
+- [ ] Provide a quick way to register the extension and install it in the provided application
+- [ ] Integrate Dusk (or similar browser testing tool)
+- [ ] Provide more test helpers (->assertDatabaseHas, etc) 

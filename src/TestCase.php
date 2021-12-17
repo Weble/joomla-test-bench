@@ -7,7 +7,7 @@ use Weble\JoomlaTestBench\Concerns\DatabaseTransactions;
 use Weble\JoomlaTestBench\Concerns\InteractsWithAuthentication;
 use Weble\JoomlaTestBench\Concerns\MakesHttpRequests;
 
-class TestCase extends \PHPUnit\Framework\TestCase
+abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     use CreatesApplication,
         InteractsWithAuthentication,
@@ -27,10 +27,9 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $this->get('/');
     }
 
-    protected function getSiteRoot(): string
-    {
-        return realpath(__DIR__ . '/../vendor/joomla/joomla-cms');
-    }
+    abstract protected function getSiteRoot(): string;
+
+    abstract protected function getDbFiles(): array;
 
     protected function getConfigurationFile(): string
     {
